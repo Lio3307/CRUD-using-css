@@ -43,9 +43,7 @@ $foto = $harga_motor['FOTO'];
     <title>Edit/Update</title>
   </head>
   <body>
-    <button>
-      <a href="index.php" style="text-decoration: none">BACK TO HOME</a></button
-    ><br />
+      <a href="index.php" style="text-decoration: none"><button class="back">BACK TO HOME</button></a><br />
     <form
       action="edit.php?id=<?php echo $idmotor; ?>"
       name="edit_motor"

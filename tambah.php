@@ -7,7 +7,9 @@
     <title>Tambah Data</title>
   </head>
   <body>
-    <a href="index.php">Kembali ke Home</a><br />
+    <a href="index.php" style="text-decoration: none"
+      ><button class="back">Kembali ke Home</button></a
+    ><br />
     <form
       action="tambah.php"
       method="post"

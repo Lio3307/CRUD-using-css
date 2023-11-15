@@ -25,7 +25,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM MOTOR");
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <button class="btn-tmbh" ><a href="tambah.php" style="text-decoration: none; color: white;">Tambah Data</a></button><br>
+  <a href="tambah.php" style="text-decoration: none;"><button class="btn-tmbh" >Tambah Data</button><br></a>
 
       <div class="container">
       <?php
@@ -35,7 +35,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM MOTOR");
         echo "<h6><b>".$harga_motor["IDMOTOR"]."</b></h6>";
         echo "<h4>".$harga_motor["HARGA"]."</h4>";
         echo "<h5>".$harga_motor["MERK"]."</h5>";
-        echo '<button class="btn-edit"><a style="color: white;" href="edit.php?id=' . $harga_motor["IDMOTOR"] . '">EDIT</a></button> | <button class="btn-del"><a style="color: white;" href="delete.php?id=' . $harga_motor["IDMOTOR"] . '">DELETE</a></button>';
+        echo '<a style="color: white;" href="edit.php?id=' . $harga_motor["IDMOTOR"] . '"><button class="btn-edit">EDIT</button></a> | <a style="color: white;" href="delete.php?id=' . $harga_motor["IDMOTOR"] . '"><button class="btn-del">DELETE</button></a>';
         echo "</div>";
       }
       ?>
