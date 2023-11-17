@@ -53,10 +53,10 @@ $foto = $harga_motor['FOTO'];
       <div class="container">
         <div class="card">
           <label>MERK</label><br />
-          <input type="text" name="merk" value="<?php echo $merk; ?>" /><br />
+          <input type="text" name="merk" value="<?php echo $merk; ?>" required /><br />
 
           <label>HARGA</label><br />
-          <input type="text" name="harga" value="<?php echo $harga; ?>" /><br />
+          <input type="text" name="harga" value="<?php echo $harga; ?>" required /><br />
 
           <!-- Input untuk mengunggah gambar -->
           <label>Foto</label><br />

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="tambah.css" />
     <title>Tambah Data</title>
   </head>
@@ -19,14 +20,14 @@
       <div class="container">
         <div class="card">
           <label>MERK</label>
-          <input type="text" name="merk" /><br />
+          <input type="text" name="merk" required /><br />
 
           <label>HARGA</label>
-          <input type="text" name="harga" /><br />
+          <input type="text" name="harga" required /><br />
 
           <!-- Input untuk mengunggah gambar -->
           <label>Foto</label>
-          <input type="file" name="foto" /><br />
+          <input type="file" name="foto" required /><br />
 
           <input type="submit" name="submit" value="TAMBAH" />
         </div>
@@ -45,6 +46,18 @@ if (isset($_POST["submit"])) {
     include_once("koneksi.php");
 
     $result = mysqli_query($mysqli, "INSERT INTO MOTOR (MERK, HARGA, FOTO) VALUES ('$merk', '$harga', '$upload_file')");
+
+    if($result){
+      ?>
+      <script>
+        swal({
+  title: "Berhasil!",
+  text: "Data telah ditambahkan!",
+  icon: "success",
+});
+      </script>
+      <?php
+    }
 }
 ?>
   </body>
