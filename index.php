@@ -22,12 +22,13 @@ if (isset($_POST["submit"])) {
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <form action="index.php" method="get">
-      <input type="text" name="search" placeholder="Cari..">
-      <input type="submit" value="Search">
-    </form>
+    
     <a href="tambah.php" style="text-decoration: none;"><button class="btn-tmbh" >Tambah Data</button><br></a>
-
+    <form action="index.php" method="get">
+    <a href="index.php"><button class="btn-back">Kembali</button></a>
+    <input type="text" name="search" placeholder="Cari..">
+      <input type="submit" value="Search">
+      </form>
       <div class="container">
       <?php
       	if(isset($_GET['search'])){
@@ -37,7 +38,6 @@ if (isset($_POST["submit"])) {
 		      $data = mysqli_query($mysqli, "SELECT * FROM motor");		
 	      }
         ?>
-        <a href="index.php"><button class="btn-back">Kembali</button></a>
         <?php
         while($harga_motor = mysqli_fetch_array($data)){
           echo "<div class='card'>";
