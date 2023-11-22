@@ -37,14 +37,12 @@ body {
 .card a {
   text-decoration: none;
 }
-h6 {
-  margin-top: 20px;
-}
 h4 {
   margin-top: 20px;
 }
 h5 {
   margin-top: 10px;
+  font-size: 16px;
 }
 button {
   margin: 10px;
