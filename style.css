@@ -97,6 +97,18 @@ button {
 .btn-del:active {
   background: red;
 }
+.btn-logout {
+  border: 1px solid black;
+  color: white;
+  float: right;
+  padding: 9px;
+  background-color: red;
+}
+.btn-logout:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: rgb(193, 0, 0);
+}
 input[type="text"] {
   margin-top: 20px;
   width: 240px;

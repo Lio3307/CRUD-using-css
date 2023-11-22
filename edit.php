@@ -21,7 +21,7 @@ if (isset($_POST["update"])) {
         $result = mysqli_query($mysqli, "UPDATE MOTOR SET MERK='$merk', HARGA='$harga' WHERE IDMOTOR=$idmotor");
     }
 
-    header("Location: index.php");
+    header("Location: admin.php");
 }
 
 // Ambil data motor dari database

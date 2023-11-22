@@ -8,7 +8,7 @@
     <title>Tambah Data</title>
   </head>
   <body>
-    <a href="index.php" style="text-decoration: none"
+    <a href="admin.php" style="text-decoration: none"
       ><button class="back">Kembali ke Home</button></a
     ><br />
     <form
