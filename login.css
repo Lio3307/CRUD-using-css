@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  max-width: 600px;
+  box-shadow: 0 3px 6px black;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: transparent;
+  color: black;
+  border-radius: 6px;
+  height: 270px;
+  margin-top: 150px;
+}
+h2 {
+  text-align: center;
+}
+input[type="text"] {
+  height: 23px;
+  outline: none;
+}
+input[type="password"] {
+  height: 23px;
+  outline: none;
+}
+input {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  top: 10px;
+}
+input[type="submit"] {
+  margin-left: 80px;
+  width: 90px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+input[type="submit"]:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #0161c8;
+}
