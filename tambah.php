@@ -53,7 +53,7 @@ if (isset($_POST["submit"])) {
         swal({
   title: "Berhasil!",
   text: "Data telah ditambahkan!",
-  icon: "success",
+  icon: "success",  
 });
       </script>
       <?php
