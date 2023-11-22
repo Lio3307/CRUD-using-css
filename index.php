@@ -26,7 +26,7 @@ if (isset($_POST["submit"])) {
     <a href="tambah.php" style="text-decoration: none;"><button class="btn-tmbh" >Tambah Data</button><br></a>
     <form action="index.php" method="get">
     <a href="index.php"><button class="btn-back">Kembali</button></a>
-    <input type="text" name="search" placeholder="Cari..">
+    <input type="text" name="search" placeholder="Cari...">
       <input type="submit" value="Search">
       </form>
       <div class="container">
