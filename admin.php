@@ -23,20 +23,20 @@ if (isset($_POST["submit"])) {
 
       if(isset($_SESSION['username'])){
 
-        echo "<a href='logout.php'><input type='button' value='logout' name='logout'></input></a>";
+        echo '<a href="logout.php"><input type="button" value="Logout" name="logout"></input></a>';
       } else {
         if($_POST['username']==$username && $_POST['password']==$password){
           $_SESSION['username']=$username;
           header('location: admin.php');
         } else{
-          echo "<script>alert(Username Atau Password SALAH!!)</script>";
+          echo "<script>alert('Username Atau Password SALAH!!')</script>";
           
-          header('location: login.php');
+          echo "<script>location.href='user.php'</script>";
         }
       }
       ?>
 
-      
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
