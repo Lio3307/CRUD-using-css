@@ -13,6 +13,30 @@ if (isset($_POST["submit"])) {
 }
 
 ?>
+
+<?php
+      include_once("koneksi.php");
+      $username="admin";
+      $password="admin123";
+      
+      session_start();
+
+      if(isset($_SESSION['username'])){
+
+        echo "<a href='logout.php'><input type='button' value='logout' name='logout'></input></a>";
+      } else {
+        if($_POST['username']==$username && $_POST['password']==$password){
+          $_SESSION['username']=$username;
+          header('location: admin.php');
+        } else{
+          echo "<script>alert(Username Atau Password SALAH!!)</script>";
+          
+          header('location: login.php');
+        }
+      }
+      ?>
+
+      
 <!DOCTYPE html>
 <html lang="en">
   <head>
