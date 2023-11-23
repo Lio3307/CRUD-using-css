@@ -27,7 +27,7 @@ if (isset($_POST["submit"])) {
       } else {
         if($_POST['username']==$username && $_POST['password']==$password){
           $_SESSION['username']=$username;
-          header('location: admin.php');
+          echo "<script>location.href='admin.php'</script>";
         } else{
           echo "<script>alert('Username Atau Password SALAH!!')</script>";
           
