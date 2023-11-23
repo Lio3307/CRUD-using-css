@@ -149,3 +149,18 @@ input[type="submit"]:active {
 .btn-back:active {
   background-color: red;
 }
+
+input[type="button"] {
+  top: 3%;
+  left: 1%;
+  position: absolute;
+  padding: 7px;
+  background-color: red;
+  color: white;
+  border: none;
+}
+input[type="button"]:hover {
+  cursor: pointer;
+  background-color: rgb(169, 0, 0);
+  text-decoration: underline;
+}
