@@ -29,9 +29,13 @@ h2 {
 input[type="text"] {
   height: 23px;
   outline: none;
+  border: none;
+  border-bottom: 1px solid black;
 }
 input[type="password"] {
   height: 23px;
+  border: none;
+  border-bottom: 1px solid black;
   outline: none;
 }
 input {
@@ -40,6 +44,9 @@ input {
   top: 10px;
 }
 input[type="submit"] {
+  position: absolute;
+  top: 54%;
+  left: 40%;
   margin-left: 80px;
   width: 90px;
   padding: 12px;
