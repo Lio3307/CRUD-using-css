@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!isset($_SESSION['loggedin'])){
+  header('Location: login.php');
+}
+
 include_once("koneksi.php");
 
 if (isset($_POST["submit"])) {
@@ -14,27 +19,7 @@ if (isset($_POST["submit"])) {
 
 ?>
 
-<?php
-      include_once("koneksi.php");
-      $username="admin";
-      $password="admin123";
-      
-      session_start();
 
-      if(isset($_SESSION['username'])){
-
-        echo '<a href="logout.php"><input type="button" value="Logout" name="logout"></input></a>';
-      } else {
-        if($_POST['username']==$username && $_POST['password']==$password){
-          $_SESSION['username']=$username;
-          echo "<script>location.href='admin.php'</script>";
-        } else{
-          echo "<script>alert('Username Atau Password SALAH!!')</script>";
-          
-          echo "<script>location.href='user.php'</script>";
-        }
-      }
-      ?>
 
 
 <!DOCTYPE html>
@@ -46,11 +31,11 @@ if (isset($_POST["submit"])) {
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    
+    <a href="logout.php"><button class="logout-btn">Logout</button></a>
     <a href="tambah.php" style="text-decoration: none;"><button class="btn-tmbh" >Tambah Data</button><br></a>
     <form action="admin.php" method="get">
     <a href="admin.php"><button class="btn-back">Kembali</button></a>
-    <input type="text" name="search" placeholder="Cari...">
+    <input type="text" name="search" placeholder="Cari..." autofocus>
       <input type="submit" value="Search">
       </form>
       <div class="container">
