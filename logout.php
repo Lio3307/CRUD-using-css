@@ -1,9 +1,5 @@
 <?php
 session_start();
-if(isset($_SESSION['username'])){
-    session_destroy();
-    echo "<script>location.href='user.php'</script>";
-} else{
-    echo "<script>location.href='user.php'</script>";
-}
+session_destroy();
+header('Location: user.php');
 ?>

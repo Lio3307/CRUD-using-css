@@ -25,7 +25,7 @@ if (isset($_POST["submit"])) {
   <a href="login.php"><button class="login">Admin</button></a>
     <form action="user.php" method="get">
     <a href="user.php"><button class="btn-back">Kembali</button></a>
-    <input type="text" name="search" placeholder="Cari...">
+    <input type="text" name="search" placeholder="Cari..." autofocus>
       <input type="submit" value="Search">
       </form>
       <div class="container">
